@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>welcome to dom </h1>
+    </header>
+    <main id="main">
+        <h1>Dom baba</h1>
+        <ul>
+            <li>jaalaliset</li>
+            <li>kopa samsu</li>
+            <li>kallu mama</li>
+        </ul>
+
+        <section>
+            <h1 id="tour"  class="ok">My tour places</h1>
+            <div class="places travel">
+                <ul id="food-list">
+                    <li>bandorban</li>
+                    <li>rangamati</li>
+                    <li>kaptai</li>
+                </ul>
+            </div>
+        </section>
+        <section id="food-container">
+            <h1 id="food"  class="ok">My foooddddddddddd</h1>
+            <ul>
+                <li>birani</li>
+                <li>kabab</li>
+                <li>bbq</li>
+            </ul>
+        </section>
+        <section id="places" >
+            <h1 id="vlog"  class="ok">My vlog </h1>
+            <div class="places travel">
+                <ul>
+                    <li>hogamra</li>
+                    <li>kutta birani</li>
+                    <li>kaptai</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="append.js"></script>
+    <script src="dom.js"></script>
+    <script>
+        const tourheading = document.getElementById('tour')
+        // console.log(tourheading);
+        tourheading.innerText = 'tour plan'
+
+        const places = document.querySelectorAll(".places li")
+        for( let place of places){
+            // console.log(place.innerText);
+        }
+        
+    </script>
+</body>
+</html>
+
+
